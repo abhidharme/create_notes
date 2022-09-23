@@ -8,7 +8,6 @@ import {
   Button,
   Center,
   Input,
-  FormLabel,
   Textarea,
   Divider,
   InputLeftElement,
@@ -29,15 +28,7 @@ import {
   ModalBody,
   ModalCloseButton
 } from '@chakra-ui/react';
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from 'react-icons/md';
 import { useEffect, useState } from 'react';
-import { BsPerson } from 'react-icons/bs';
 import { BiSearchAlt, BiEditAlt } from 'react-icons/bi';
 import { TiDelete } from 'react-icons/ti';
 import axios from 'axios';
@@ -50,7 +41,6 @@ export default function Note() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   const [writenote, setWriteNote] = useState("" || []);
-  const [changenote, setChangeNote] = useState("");
     const [search, setSearch] = useState();
     const [notedata, setNotedata] = useState([]);
     const [searchId, setSearchId] = useState();
